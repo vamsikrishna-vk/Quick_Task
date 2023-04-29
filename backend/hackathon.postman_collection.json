@@ -1,0 +1,259 @@
+{
+	"info": {
+		"_postman_id": "e1eab1de-c919-4cd4-844e-793d2d9158a8",
+		"name": "hackathon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13979123"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/home",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"home"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "set prefared name",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"prefName\":\"mr bean\",\r\n    \"email\":\"dip30.sur@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/setpref",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"setpref"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllTasks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_email\":\"hello123@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "10.10.10.225:8080/getalltask",
+					"host": [
+						"10",
+						"10",
+						"10",
+						"225"
+					],
+					"port": "8080",
+					"path": [
+						"getalltask"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllProfile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"hello123@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "10.10.10.225:8080/getallProfile",
+					"host": [
+						"10",
+						"10",
+						"10",
+						"225"
+					],
+					"port": "8080",
+					"path": [
+						"getallProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setData",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"intent\":\"reminder\",\r\n     \"timing\":\"today\", \r\n     \"sender_email\":\"ggs@yahoo.com\",\r\n     \"user_email\":\"dip20.sur@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/setData",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"setData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flask API call",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"message\":\"hello can you finish this task by EOD\",\r\n    \"senderName\":\"Dipanjan\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.10.10.218:5000/getIntent",
+					"protocol": "http",
+					"host": [
+						"10",
+						"10",
+						"10",
+						"218"
+					],
+					"port": "5000",
+					"path": [
+						"getIntent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendMessage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"senderemail\":\"hello@gmail.com\",\r\n    \"message\":\"hello can you finish this task by EOD\", \r\n    \"nickname\":\"hi\",\r\n    \"email\":\"hello123@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "10.10.10.225:8080/sendMessage",
+					"host": [
+						"10",
+						"10",
+						"10",
+						"225"
+					],
+					"port": "8080",
+					"path": [
+						"sendMessage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "makeFriend",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"nick\":\"hi\", \"friend_email\":\"hello@gmail.com\", \"self_email\":\"hello123@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.10.10.225:8080/makeFriend",
+					"protocol": "http",
+					"host": [
+						"10",
+						"10",
+						"10",
+						"225"
+					],
+					"port": "8080",
+					"path": [
+						"makeFriend"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://10.10.10.225:8080/home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://10.10.10.225:8080/home",
+					"protocol": "http",
+					"host": [
+						"10",
+						"10",
+						"10",
+						"225"
+					],
+					"port": "8080",
+					"path": [
+						"home"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
