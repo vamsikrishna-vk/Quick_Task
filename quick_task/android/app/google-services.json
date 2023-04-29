@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "837247294878",
+    "project_id": "hello-768dc",
+    "storage_bucket": "hello-768dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837247294878:android:8fb9426629bdf60bd5ca8f",
+        "android_client_info": {
+          "package_name": "com.example.quick_task"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837247294878-37p4qbsn19d67mlc9hetmfckab21n8vc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwDXV1KY4P7G0Vq-osvX0ERJZwsYCg2bs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "837247294878-37p4qbsn19d67mlc9hetmfckab21n8vc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
